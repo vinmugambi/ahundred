@@ -1,0 +1,1 @@
+print("\033[31m", "warning", "\033[0m", "Don't try this at home" )
