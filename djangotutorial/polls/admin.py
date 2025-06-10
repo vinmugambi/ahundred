@@ -4,4 +4,8 @@ from django.contrib import admin
 
 from .models import Question
 
-admin.site.register(Question)
+class QuestionAdmin(admin.ModelAdmin):
+    fields = ["pub_date", "question_text"]
+
+# customizing questions admin form
+admin.site.register(Question, QuestionAdmin)
